@@ -1,24 +1,104 @@
-*
-{
+/* Reset and Base Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.intro
-{
-    background-color: #398adb;
-    padding: 50px 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1e2f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
 }
-.titulo1
-{
-    color: white;
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: #2a2a3b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.sidebar img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.sidebar h3 {
     text-align: center;
     margin-bottom: 20px;
 }
-.intro p
-{
-    color: black;
+
+.sidebar p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.sidebar .link {
+    display: block;
     text-align: center;
+    margin-top: 10px;
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.sidebar .link:hover {
+    text-decoration: underline;
+}
+
+.main {
+    flex: 1;
+    background-color: #2a2a3b;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.section {
     margin-bottom: 20px;
+}
+
+.section h3 {
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.section p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.section strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.section .skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section .skills div {
+    background-color: #3a3a4b;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    flex: 1 1 100px;
+    text-align: center;
 }
