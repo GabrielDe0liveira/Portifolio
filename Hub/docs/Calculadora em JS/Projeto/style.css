@@ -1,0 +1,95 @@
+body {
+    background: #6eb37f;
+}
+
+.wrapper {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #262626;
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.wrapper h2 {
+    text-transform: uppercase;
+    font-family: poppins;
+    margin-bottom: 10%;
+}
+
+.wrapper input
+{
+	border-radius: 5px;
+	padding: 5px;
+}
+
+input[type="text"] {
+    height: 40px;
+    font-size: 24px;
+}
+
+button {
+    background: #EE4477;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: poppins;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="button"] {
+    margin-bottom: 20px; /* Espaço entre o botão "Calculate" e os números */
+    width: 100%; /* Faz o botão "Calculate" ocupar toda a largura */
+    text-align: center;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+b {
+    font-size: 30px;
+}
+
+.calculator {
+    display: grid; /* Altere para grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Define 3 colunas de tamanhos iguais */
+    gap: 10px; /* Espaço entre os botões */
+    margin-top: 20px; /* Espaço entre os checkboxes e os números */
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza os botões dentro da caixa preta */
+}
+
+.calc-item {
+    width: 50px;
+    height: 50px;
+    background: #EE4477;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.calc-item:hover {
+    background: #dd3366;
+}
+
+.calc-item:active {
+    background: #bb2244;
+}
