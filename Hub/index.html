@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Gabriel de Oliveira – Portfólio</h1>
+      <p>
+        Bem-vindo ao meu hub de projetos! Sinta-se à vontade para explorar.
+        Obrigado pela visita!
+      </p>
+
+      <div class="group relative w-80 h-50 flex items-center justify-center overflow-hidden rounded-2xl shadow-lg bg-black cursor-pointer" onclick="nextImage()">
+        <img id="slider-image" src="assets/img/Eu1.jpeg" alt="Imagem" 
+             class="max-w-full max-h-full object-contain transition duration-300 group-hover:brightness-50" />
+        
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+          <h3 id="slider-text" class="text-white text-xl font-semibold text-center px-4">Texto da imagem 1</h3>
+        </div>
+      </div>
+      
+      <script>
+        const images = [
+          "assets/img/Eu1.jpeg",
+          "assets/img/placeholder (1).jpg",
+          "assets/img/placeholder (2).jpg",
+          "assets/img/placeholder (3).jpg"
+        ];
+
+        const texts = [
+          "Olá, Esse sou eu!",
+          "texto para placeholder 1",
+          "Texto para placeholder 2",
+          "Texto para placeholder 3",
+          ];
+        let currentIndex = 0;
+      
+        function nextImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          document.getElementById("slider-image").src = images[currentIndex];
+          document.getElementById("slider-text").textContent = texts[currentIndex];
+        }
+      </script>
+      
+
+    </header>
+
+    <section class="cards-container">
+      <div class="card">
+        <h3>Site Básico</h3>
+        <p>Site básico feito apenas em HTML e CSS</p>
+        <a href="assets/docs/Site Básico HTML e CSS/index.html" class="button"
+          >Clique Aqui!</a
+        >
+      </div>
+
+      <div class="card">
+        <h3>Calculadora</h3>
+        <p>Calculadora simples feita em JavaScript</p>
+        <a
+          href="assets/docs/Calculadora em JS/Projeto/index.html"
+          class="button"
+          >Clique Aqui!</a
+        >
+      </div>
+
+      <div class="card">
+        <h3>Calculadora de Gorgeta</h3>
+        <p>Com opções de porcentagem e divisão</p>
+        <a href="assets/docs/TipCalculator/index.html" class="button"
+          >Clique Aqui!</a
+        >
+      </div>
+
+      <div class="card">
+        <h3>Pick a Color</h3>
+        <p>Clique no botão para selecionar aleatoriamente uma cor</p>
+        <a href="assets/docs/ColorChanger/index.html" class="button"
+          >Clique Aqui!</a
+        >
+      </div>
+
+      <div class="card">
+        <h3>Guess the Number</h3>
+        <p>Jogo de adivinhação entre 1 e 100 contra o computador</p>
+        <a href="assets/docs/GuessTheNumber/index.html" class="button"
+          >Clique Aqui!</a
+        >
+      </div>
+    </section>
+
+    <footer>
+      <p>Desenvolvido por Gabriel de Oliveira</p>
+      <p>2025</p>
+      <a href="#insta">Instagram</a>
+      <a href="https://github.com/GabrielDe0liveira">GitHub</a>
+      <a href="https://www.linkedin.com/in/gabriel-de-oliveira-44023a348/">LinkedIn</a>
+    </footer>
+  </body>
+</html>
